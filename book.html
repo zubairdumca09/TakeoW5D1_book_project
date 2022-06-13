@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- 
+Book Title //input box
+Book Writer // input box
+Book Publisher // input box
+ISBN Number // input box
+Subject of the Books //Dropdown
+Number of pages // input box
+Availability // Radio box -->
+
+<body>
+    <header>
+        <h2 class="text-start my-3 mx-3"> Create a Book</h2>
+    </header>
+    <div class="container my-5">
+        <!-- <form> -->
+        <div class="mb-3 row">
+            <label for="title" class="col-sm-2 col-form-label">Book Title</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="title" placeholder="Book Title">
+            </div>
+        </div>
+        <div class="mb-3 row">
+            <label for="writer" class="col-sm-2 col-form-label">Book Writer</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="writer" placeholder="Book Writer">
+            </div>
+        </div>
+        <div class="mb-3 row">
+            <label for="publisher" class="col-sm-2 col-form-label">Book Publisher</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="publisher" placeholder="Book Publisher">
+            </div>
+        </div>
+        <div class="mb-3 row">
+            <label for="isbn" class="col-sm-2 col-form-label">ISBN Number</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="isbn" placeholder="ISBN Number">
+            </div>
+        </div>
+        <div class="mb-3 row">
+            <label for="subject" class="col-sm-2 col-form-label">Book Subject</label>
+            <div class="col-sm-3">
+                <select class="form-select" aria-label="Default select example" id="subject">
+                    <option selected>Select Subject</option>
+                    <option value="1">History</option>
+                    <option value="2">Politics</option>
+                    <option value="3">Literature</option>
+                    <option value="4">Economics</option>
+                    <option value="5">Other</option>
+                </select>
+            </div>
+        </div>
+        <div class="mb-3 row">
+            <label for="inputPassword" class="col-sm-2 col-form-label">Availability</label>
+            <div class="col-md-3">
+                <div class="form-check col-sm-2">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        Yes
+                    </label>
+                </div>
+                <div class="form-check col-sm-2">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                    <label class="form-check-label" for="flexRadioDefault2">
+                        No
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="mb-3 row">
+            <label for="numPages" class="col-sm-2 col-form-label">No of Pages</label>
+            <div class="col-sm-3">
+                <input type="number" class="form-control" id="numPages" placeholder="No of Pages">
+            </div>
+        </div>
+
+        <div class="mb-3 row">
+            <div class="col-md-3 offset-md-2">
+                <button class="btn btn-primary" onclick="createBookData()">Save Book</button>
+            </div>
+        </div>
+        <!-- </form> -->
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="./js/book.js"></script>
+</body>
+
+</html>
